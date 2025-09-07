@@ -1,3 +1,4 @@
+import UserProfile from './components/UserProfile';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
@@ -14,6 +15,7 @@ function App() {
     <>
     <WelcomeMessage></WelcomeMessage>
       <div>
+        <UserProfile></UserProfile>
         <Header></Header>
         <MainContent></MainContent>
         <Footer></Footer>

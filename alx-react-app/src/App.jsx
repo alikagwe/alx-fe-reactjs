@@ -15,7 +15,11 @@ function App() {
     <>
     <WelcomeMessage></WelcomeMessage>
       <div>
-        <UserProfile></UserProfile>
+        <UserProfile 
+        name="Alice" 
+        age="25" 
+        bio="Loves hiking and photography" 
+      />
         <Header></Header>
         <MainContent></MainContent>
         <Footer></Footer>

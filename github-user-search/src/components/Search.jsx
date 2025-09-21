@@ -5,7 +5,7 @@ function Search() {
   const [username, setUsername] = useState("");
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState("Looks like we can't find the user");
 
   const handleSubmit = async (e) => {
     e.preventDefault();

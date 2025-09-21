@@ -5,7 +5,7 @@ function Search() {
   const [username, setUsername] = useState("");
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("Looks like we can't find the user");
+  const [error, setError] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,7 +17,7 @@ function Search() {
       const data = await fetchUserData(username);
       setUser(data);
     } catch (err) {
-      setError("Looks like we can’t find the user");
+      setError("Looks like we cant find the user");
     } finally {
       setLoading(false);
     }
